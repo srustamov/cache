@@ -2,19 +2,19 @@
 ##Php Cache Library
 
 >**Default configs [srustamov/Cache/config.php]**
-```
+```php
  $cache = new Samir\Cache\Cache();
 ```
 
 >**Or your config**
-```
+```php
 $cacheConfig = require 'your-config-file.php';
 
 $cache = new Samir\Cache\Cache($cacheConfig /*,$adapter| default file*/);
 ```
 
 >**Switch adapter [default file]**
-```
+```php
 $cache->adapter('redis');
 
 
