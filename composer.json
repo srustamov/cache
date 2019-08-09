@@ -6,7 +6,7 @@
         "cache",
         "redis"
     ],
-    "homepage": "https://github.com/srustamov/php-cache",
+    "homepage": "https://github.com/srustamov/cache",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -17,9 +17,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0.0",
-        "ext-redis": "*",
-        "ext-memcached": "*"
+        "php": ">=7.0.0"
     },
     "autoload": {
         "psr-4": {
