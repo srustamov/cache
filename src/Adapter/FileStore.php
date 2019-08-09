@@ -21,6 +21,11 @@ class FileStore implements CacheAdapterInterface
     public function __construct($config)
     {
         $this->path = $config['path'];
+        if(!is_dir($config['path'])) {
+            if(!mkdir($config['path'],0775,true)) {
+                throw new \RuntimeException('Directory ['.$config['path'].'] could not be found or created');
+            }
+        }
 
         $this->gc();
     }
