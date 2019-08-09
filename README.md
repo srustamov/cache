@@ -1,6 +1,10 @@
 
 ## Php Cache Library
 
+```
+composer require srustamov/cache
+```
+
 >**Default configs [srustamov/Cache/config.php]**
 ```php
  $cache = new Samir\Cache\Cache();
